@@ -7,7 +7,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-import webDesign from "../assets/Laptop.jpeg";
+import webDesign from "../assets/laptop.jpeg";
 import graphicDesign from "../assets/last.jpeg";
 import printDesign from "../assets/building.jpeg";
 import brandingDesign from "../assets/two.jpeg";
