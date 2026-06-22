@@ -45,20 +45,19 @@ export default function ServicesSection() {
   ];
 
   return (
-<section
-  id="service"
-  className="bg-[#FAF7F3] py-10 sm:py-12 md:py-16 lg:py-20 xl:py-24"
->
-  <div className="max-w-[1600px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
+    <section
+      id="service"
+      className="bg-[#FAF7F3] py-10 sm:py-12 md:py-16 lg:py-20 xl:py-24"
+    >
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
+        {/* Heading */}
+        <div className="text-center mb-10 md:mb-14 lg:mb-16">
+          <p className="text-[#D08A1A] text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase">
+            Our Services
+          </p>
 
-    {/* Heading */}
-    <div className="text-center mb-10 md:mb-14 lg:mb-16">
-      <p className="text-[#D08A1A] text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase">
-        Our Services
-      </p>
-
-      <h2
-        className="
+          <h2
+            className="
           mt-3
           text-2xl
           sm:text-3xl
@@ -69,14 +68,14 @@ export default function ServicesSection() {
           text-[#0F172A]
           leading-tight
         "
-      >
-        SOLUTIONS THAT ELEVATE BRANDS
-      </h2>
+          >
+            SOLUTIONS THAT ELEVATE BRANDS
+          </h2>
 
-      <div className="w-16 h-[3px] bg-[#D08A1A] mx-auto my-4 sm:my-5"></div>
+          <div className="w-16 h-[3px] bg-[#D08A1A] mx-auto my-4 sm:my-5"></div>
 
-      <p
-        className="
+          <p
+            className="
           max-w-2xl
           mx-auto
           px-2
@@ -87,15 +86,15 @@ export default function ServicesSection() {
           leading-7
           sm:leading-8
         "
-      >
-        From digital to print, and everything in between — we create
-        designs that communicate, captivate, and convert.
-      </p>
-    </div>
+          >
+            From digital to print, and everything in between — we create designs
+            that communicate, captivate and convert.
+          </p>
+        </div>
 
-    {/* Cards */}
-    <div
-      className="
+        {/* Cards */}
+        <div
+          className="
         grid
         grid-cols-1
         sm:grid-cols-2
@@ -105,14 +104,14 @@ export default function ServicesSection() {
         md:gap-6
         lg:gap-8
       "
-    >
-      {services.map((service, index) => {
-        const Icon = service.icon;
+        >
+          {services.map((service, index) => {
+            const Icon = service.icon;
 
-        return (
-          <div
-            key={index}
-            className="
+            return (
+              <div
+                key={index}
+                className="
               relative
               group
               bg-white
@@ -131,10 +130,10 @@ export default function ServicesSection() {
               hover:shadow-[0_25px_60px_rgba(208,138,26,0.18)]
               cursor-pointer
             "
-          >
-            {/* Glow */}
-            <div
-              className="
+              >
+                {/* Glow */}
+                <div
+                  className="
                 absolute inset-0
                 bg-gradient-to-br
                 from-[#D08A1A]/5
@@ -145,15 +144,15 @@ export default function ServicesSection() {
                 duration-500
                 pointer-events-none
               "
-            />
+                />
 
-            {/* Image */}
-            <div className="p-3 sm:p-4">
-              <div className="overflow-hidden rounded-xl">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="
+                {/* Image */}
+                <div className="p-3 sm:p-4">
+                  <div className="overflow-hidden rounded-xl">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="
                     w-full
                     h-[180px]
                     sm:h-[200px]
@@ -164,16 +163,15 @@ export default function ServicesSection() {
                     duration-700
                     group-hover:scale-105
                   "
-                />
-              </div>
-            </div>
+                    />
+                  </div>
+                </div>
 
-            {/* Content */}
-            <div className="px-5 sm:px-6 pb-6 flex flex-col flex-1 relative z-10">
-
-              {/* Icon */}
-              <div
-                className="
+                {/* Content */}
+                <div className="px-5 sm:px-6 pb-6 flex flex-col flex-1 relative z-10">
+                  {/* Icon */}
+                  <div
+                    className="
                   w-11
                   h-11
                   sm:w-12
@@ -189,13 +187,13 @@ export default function ServicesSection() {
                   group-hover:bg-[#D08A1A]
                   group-hover:text-white
                 "
-              >
-                <Icon size={20} />
-              </div>
+                  >
+                    <Icon size={20} />
+                  </div>
 
-              {/* Title */}
-              <h3
-                className="
+                  {/* Title */}
+                  <h3
+                    className="
                   mt-4
                   sm:mt-5
                   text-xl
@@ -206,13 +204,13 @@ export default function ServicesSection() {
                   duration-500
                   group-hover:text-[#D08A1A]
                 "
-              >
-                {service.title}
-              </h3>
+                  >
+                    {service.title}
+                  </h3>
 
-              {/* Description */}
-              <p
-                className="
+                  {/* Description */}
+                  <p
+                    className="
                   mt-3
                   sm:mt-4
                   text-[#64748B]
@@ -221,13 +219,13 @@ export default function ServicesSection() {
                   leading-7
                   flex-1
                 "
-              >
-                {service.description}
-              </p>
+                  >
+                    {service.description}
+                  </p>
 
-              {/* Button */}
-              <button
-                className="
+                  {/* Button */}
+                  <button
+                    className="
                   mt-auto
                   pt-5
                   flex
@@ -241,24 +239,23 @@ export default function ServicesSection() {
                   duration-500
                   group-hover:text-[#D08A1A]
                 "
-              >
-                EXPLORE
-
-                <ArrowRight
-                  size={16}
-                  className="
+                  >
+                    EXPLORE
+                    <ArrowRight
+                      size={16}
+                      className="
                     transition-all
                     duration-500
                     group-hover:translate-x-2
                   "
-                />
-              </button>
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  </div>
-</section>
+                    />
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
   );
 }
